@@ -3,7 +3,7 @@ require_relative 'controller/user_controller'
 puts 'Administracion de usuarios'
 @user_controller = UserController.new
 
-def mostrar_menu
+def show_menu
   puts ""
   puts "Seleccione una opción:"
   puts "1. Registrar usuario"
@@ -13,7 +13,7 @@ def mostrar_menu
   puts "5. Salir"
 end
 
-def registrar_usuario
+def create_user
   puts "Ingrese el ID del usuario"
   id = gets.chomp.to_i
   puts "Ingrese el nombre completo del usuario"
@@ -22,34 +22,34 @@ def registrar_usuario
   @user_controller.create(id, name)
 end
 
-def buscar_usuario
+def search_user
   puts "Ingrese el ID del usuario"
   id = gets.chomp.to_i
 
   @user_controller.find(id)
 end
 
-def editar_usuario
+def update_user
   @user_controller.update
 end
 
-def eliminar_usuario
+def delete_user
   @user_controller.delete
 end
 
 loop do
-  mostrar_menu
+  show_menu
   opcion = gets.chomp.to_i
-  
+
   case opcion
   when 1
-    registrar_usuario
+    create_user
   when 2
-    buscar_usuario
+    search_user
   when 3
-    editar_usuario
+    update_user
   when 4
-    eliminar_usuario
+    delete_user
   when 5
     puts "Saliendo..."
     break
