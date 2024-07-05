@@ -17,7 +17,7 @@ class Server
 
       @socket.listen(5)
 
-      puts "Server is listening on port #{@port}"
+      puts "Server está escuchando en el puerto #{@port}"
 
       ClientHandler.handle_events @socket
     end
@@ -26,5 +26,7 @@ class Server
   def stop
     @socket.close
     @thread.exit
+
+    puts "Servidor detenido"
   end
 end
