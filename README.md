@@ -94,3 +94,45 @@ bundle exec ruby app.rb
 # * Listening on http://[::1]:4567
 ```
 <img src="11-estilo-arq-monolitica/img_1.png" width="500" />
+
+### 12-estilo-arq-p2p
+```bash
+ruby 12-estilo-arq-p2p/start.rb 3001
+
+# Nodo corriendo en el puerto 3001
+# 
+# Seleccione una opción:
+# 1. Enviar mensaje
+# 2. Conectar con un nodo
+# 3. Listar nodos
+# 4. Salir
+```
+
+```bash
+ruby 12-estilo-arq-p2p/start.rb 3002 3001
+
+# Nodo corriendo en el puerto 3002
+# Conectado con el nodo en el puerto 3001
+# 
+# Seleccione una opción:
+# 1. Enviar mensaje
+# 2. Conectar con un nodo
+# 3. Listar nodos
+# 4. Salir
+```
+
+```bash
+ruby 12-estilo-arq-p2p/start.rb 3003 3002 3001
+
+# Nodo corriendo en el puerto 3003
+# Conectado con el nodo en el puerto 3001
+# Conectado con el nodo en el puerto 3002
+# 
+# Seleccione una opción:
+# 1. Enviar mensaje
+# 2. Conectar con un nodo
+# 3. Listar nodos
+# 4. Salir
+```
+
+<img src="12-estilo-arq-p2p/img_2.png" width="100%" />
