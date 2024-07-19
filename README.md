@@ -7,13 +7,15 @@ Ejecución
 ```bash
 ruby 01-estilo-arq-capas/start.rb
 
+# Administracion de usuarios
+# Base de datos inicializada
+# 
 # Seleccione una opción:
-# 1. Iniciar servidor
-# 2. Detener servidor
-# 3. Iniciar cliente
-# 4. Enviar mensaje
-# 5. Terminar conexión
-# 6. Salir
+# 1. Registrar usuario
+# 2. Buscar usuario
+# 3. Editar usuario
+# 4. Eliminar usuario
+# 5. Salir
 ```
 
 ### 02-estilo-arq-cliente-servidor
