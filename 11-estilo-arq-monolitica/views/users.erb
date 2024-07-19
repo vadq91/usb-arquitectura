@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Usuarios</title>
+</head>
+<body>
+  <h1>Usuarios</h1>
+  <form action="/users" method="post">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name" required>
+    <input type="submit" value="Create User">
+  </form>
+  <ul>
+    <% @users.each do |user| %>
+      <li><%= user.name %></li>
+    <% end %>
+  </ul>
+  <p><a href="/">Volver</a></p>
+</body>
+</html>

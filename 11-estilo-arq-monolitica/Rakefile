@@ -1,0 +1,47 @@
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+require './config/environment'
+
+# Define tareas personalizadas aquí si es necesario
+
+namespace :db do
+  desc "Migrate the database"
+  task :migrate do
+    ActiveRecord::Migrator.migrations_paths = [File.expand_path('db/migrate')]
+    Rake::Task["db:migrate"].invoke
+  end
+
+  desc "Create the database"
+  task :create do
+    ActiveRecord::Base.establish_connection
+    ActiveRecord::Base.connection
+    Rake::Task["db:create"].invoke
+  end
+
+  desc "Drop the database"
+  task :drop do
+    Rake::Task["db:drop"].invoke
+  end
+
+  desc "Rollback the last migration"
+  task :rollback do
+    Rake::Task["db:rollback"].invoke
+  end
+
+  desc "Reset the database"
+  task :reset do
+    Rake::Task["db:drop"].invoke
+    Rake::Task["db:create"].invoke
+    Rake::Task["db:migrate"].invoke
+  end
+
+  desc "Seed the database"
+  task :seed do
+    Rake::Task["db:seed"].invoke
+  end
+end
+
+desc "Run the Sinatra app"
+task :run do
+  exec "ruby app.rb"
+end

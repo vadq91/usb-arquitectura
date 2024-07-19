@@ -1,0 +1,9 @@
+source 'http://rubygems.org'
+
+gem 'sinatra'
+gem 'sinatra-activerecord'
+gem 'sqlite3', '~> 1.7'
+gem 'sinatra-contrib', require: false
+gem 'rake'
+gem 'rackup'
+gem 'puma'

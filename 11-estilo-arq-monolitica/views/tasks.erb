@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tareas</title>
+</head>
+<body>
+  <h1>Tareas</h1>
+  <form action="/tasks" method="post">
+    <label for="title">Título:</label>
+    <input type="text" name="title" id="title" required>
+    <label for="description">Descripción:</label>
+    <textarea name="description" id="description" required></textarea>
+    <label for="user_id">Asignar al usuario:</label>
+    <select name="user_id" id="user_id">
+      <% @users.each do |user| %>
+        <option value="<%= user.id %>"><%= user.name %></option>
+      <% end %>
+    </select>
+    <input type="submit" value="Create Task">
+  </form>
+  <ul>
+    <% @tasks.each do |task| %>
+      <li><%= task.title %> - <%= task.description %> - asignada a: <%= task.user.name %></li>
+    <% end %>
+  </ul>
+  <p><a href="/">Volver</a></p>
+</body>
+</html>

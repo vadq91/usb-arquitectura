@@ -76,3 +76,21 @@ ruby 10-estilo-arq-agentes/start.rb
 # 7. Asignar tarea
 # 8. Salir
 ```
+
+### 11-estilo-arq-monolitica
+Ejecución
+```bash
+cd 11-estilo-arq-monolitica
+bundle exec ruby app.rb
+
+# == Sinatra (v4.0.0) has taken the stage on 4567 for development with backup from Puma
+# Puma starting in single mode...
+# * Puma version: 6.4.2 (ruby 3.2.3-p157) ("The Eagle of Durango")
+# *  Min threads: 0
+# *  Max threads: 5
+# *  Environment: development
+# *          PID: 41839
+# * Listening on http://127.0.0.1:4567
+# * Listening on http://[::1]:4567
+```
+<img src="11-estilo-arq-monolitica/img_1.png" width="500" />
