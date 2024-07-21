@@ -1,0 +1,16 @@
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/product_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+/home/usuario/.rvm/rubies/ruby-3.2.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/product_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240719-4254-4zuquy sitelibdir\=./.gem.20240719-4254-4zuquy clean
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/product_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240719-4254-4zuquy sitelibdir\=./.gem.20240719-4254-4zuquy
+make: Nothing to be done for 'all'.
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/product_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240719-4254-4zuquy sitelibdir\=./.gem.20240719-4254-4zuquy install
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/product_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240719-4254-4zuquy sitelibdir\=./.gem.20240719-4254-4zuquy clean

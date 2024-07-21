@@ -32,6 +32,48 @@ ruby 02-estilo-arq-cliente-servidor/start.rb
 # 6. Sali
 ```
 
+### 04-estilo-arq-soa
+Ejecución
+```bash
+# Iniciar el bus de servicios
+cd 04-estilo-arq-soa
+bundle exec ruby bus_service/app.rb
+```
+<img src="04-estilo-arq-soa/bus_service/img_1.png" width="500" />
+
+```bash
+# Iniciar el servicio de usuarios
+cd 04-estilo-arq-soa
+bundle exec ruby user_service/app.rb
+```
+<img src="04-estilo-arq-soa/user_service/img_1.png" width="500" />
+
+```bash
+# Iniciar el servicio de usuarios
+cd 04-estilo-arq-soa
+bundle exec ruby user_service/app.rb
+```
+<img src="04-estilo-arq-soa/product_service/img_1.png" width="500" />
+
+Consumo del servicio
+1. Listar usuarios
+
+<img src="04-estilo-arq-soa/img_1.png" width="500" />
+
+2. Listar productos
+
+<img src="04-estilo-arq-soa/img_2.png" width="500" />
+
+3. Crear usuarios
+
+<img src="04-estilo-arq-soa/img_4.png" width="500" />
+
+4. Crear productos
+
+<img src="04-estilo-arq-soa/img_3.png" width="500" />
+
+
+
 ### 08-estilo-arq-espacio-nombres
 Ejecución
 ```bash

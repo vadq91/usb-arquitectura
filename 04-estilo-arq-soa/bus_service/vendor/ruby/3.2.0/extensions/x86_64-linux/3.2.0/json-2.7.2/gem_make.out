@@ -1,0 +1,16 @@
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/bus_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+/home/usuario/.rvm/rubies/ruby-3.2.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/bus_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-9271-8jj9e0 sitelibdir\=./.gem.20240720-9271-8jj9e0 clean
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/bus_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-9271-8jj9e0 sitelibdir\=./.gem.20240720-9271-8jj9e0
+make: Nothing to be done for 'all'.
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/bus_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-9271-8jj9e0 sitelibdir\=./.gem.20240720-9271-8jj9e0 install
+
+current directory: /home/usuario/ruby/Especializacion/usb-arquitectura/04-estilo-arq-soa/bus_service/vendor/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240720-9271-8jj9e0 sitelibdir\=./.gem.20240720-9271-8jj9e0 clean
