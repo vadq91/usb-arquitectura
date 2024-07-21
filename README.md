@@ -49,9 +49,9 @@ bundle exec ruby user_service/app.rb
 <img src="04-estilo-arq-soa/user_service/img_1.png" width="500" />
 
 ```bash
-# Iniciar el servicio de usuarios
+# Iniciar el servicio de productos
 cd 04-estilo-arq-soa
-bundle exec ruby user_service/app.rb
+bundle exec ruby product_service/app.rb
 ```
 <img src="04-estilo-arq-soa/product_service/img_1.png" width="500" />
 
